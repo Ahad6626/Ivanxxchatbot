@@ -14,5 +14,5 @@ A Telegram chatbot powered by OpenAI GPT (ChatGPT).
 
 ### 1. Clone the Repo
 ```bash
-git clone https://github.com/your-username/au-chat-bot.git
+git clone https://github.com/Ahad6626/Ivanxxchatbot/au-chat-bot.git
 cd au-chat-bot
