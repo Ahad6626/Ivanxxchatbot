@@ -1,0 +1,32 @@
+{
+  "name": "AU Chat Bot",
+  "description": "A Telegram chatbot powered by OpenAI's GPT (ChatGPT).",
+  "repository": "https://github.com/Ahad6626/Ivanxxchatbot",
+  "logo": "https://raw.githubusercontent.com/your-username/au-chat-bot/main/logo.png",
+  "keywords": ["telegram", "bot", "openai", "chatgpt", "python"],
+  "env": {
+    "BOT_TOKEN": {
+      "description": "Your Telegram Bot Token from @BotFather",
+      "required": true
+    },
+    "OPENAI_API_KEY": {
+      "description": "Your OpenAI API Key from https://platform.openai.com/",
+      "required": true
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "addons": [],
+  "scripts": {
+    "postdeploy": "echo AU Chat Bot deployed successfully!"
+  }
+}
